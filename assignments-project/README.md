@@ -1,38 +1,80 @@
-# assignments-project
+🧾 Assignments Tracker
 
-This template should help get you started developing with Vue 3 in Vite.
+  A simple and elegant Vue 3 project built with Vite — designed to help you manage and track assignments.
+  This project demonstrates the core concepts of Vue such as ref, reactive, v-if, v-for, v-on, v-bind, v-model, emit, watch, and lifecycle hooks         (onMounted, onUpdated).
 
-## Recommended IDE Setup
+  🚀 Features
+  
+  ✏️ Add new assignments
+  
+  ✅ Mark assignments as complete / undo
+  
+  ❌ Delete assignments
+  
+  👀 Dynamic list rendering using v-for
+  
+  🧠 Reactive state management with ref
+  
+  🔗 Two-way binding using v-model
+  
+  🔔 Event communication via emit
+  
+  ⏱️ Lifecycle hooks for mounted and updated states
+  
+  👁️ Watcher to track reactive data changes
+  
+  💅 Modern responsive design with smooth hover effects
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+🧰 Tech Stack
 
-## Recommended Browser Setup
+  Vue 3 (Composition API)
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+  Vite (for fast development and build)
+  
+  Bun (for package management and scripts)
+  
+  HTML + CSS + JavaScript (ES Modules)
 
-## Customize configuration
+🧑‍💻 Recommended Setup
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+  IDE:
+  
+  VS Code
+  
+  Vue (Official Extension)
+   (disable Vetur)
 
-## Project Setup
+  Browser Tools:
+  
+  Vue.js Devtools for Chrome
+  
+  Vue.js Devtools for Firefox
 
-```sh
-bun install
-```
+⚙️ Project Setup
+  bun install
 
-### Compile and Hot-Reload for Development
+🧩 Compile and Hot-Reload for Development
+  bun dev
 
-```sh
-bun dev
-```
+🏗️ Compile and Minify for Production
+  bun run build
 
-### Compile and Minify for Production
+📂 Project Structure
+src/
+├── components/
+│   ├── AssignmentCreate.vue   # Input form to add new assignments
+│   ├── AssignmentList.vue     # Displays and manages the list
+├── App.vue                    # Main app with logic & watcher
+├── main.js                    # Entry point
 
-```sh
-bun run build
-```
+🧠 What You’ll Learn
+
+Difference between Composition API and Options API
+
+How to use reactivity with ref and watch
+
+How to handle parent-child communication with emit
+
+Using lifecycle hooks (onMounted, onUpdated)
+
+Clean component-based UI structure
