@@ -15,12 +15,21 @@
           </span>
         </div>
 
-        <button 
-          @click="$emit('toggle-complete', assignment.id)"
-          :class="assignment.complete ? 'undo' : 'complete-btn'"
-        >
-          {{ assignment.complete ? 'Undo' : 'Mark Complete' }}
-        </button>
+        <div class="buttons">
+          <button 
+            @click="$emit('toggle-complete', assignment.id)"
+            :class="assignment.complete ? 'undo' : 'complete-btn'"
+          >
+            {{ assignment.complete ? 'Undo' : 'Mark Complete' }}
+          </button>
+
+          <button 
+            @click="$emit('delete-assignment', assignment.id)"
+            class="delete-btn"
+          >
+            Delete
+          </button>
+        </div>
       </li>
     </ul>
   </div>
@@ -110,6 +119,11 @@ li:hover {
   font-weight: 500;
 }
 
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
 button {
   border: none;
   border-radius: 8px;
@@ -137,6 +151,16 @@ button.undo {
 
 button.undo:hover {
   background: linear-gradient(90deg, #d97706, #b45309);
+  transform: translateY(-1px);
+}
+
+button.delete-btn {
+  background: linear-gradient(90deg, #f87171, #dc2626);
+  color: white;
+}
+
+button.delete-btn:hover {
+  background: linear-gradient(90deg, #dc2626, #b91c1c);
   transform: translateY(-1px);
 }
 </style>
